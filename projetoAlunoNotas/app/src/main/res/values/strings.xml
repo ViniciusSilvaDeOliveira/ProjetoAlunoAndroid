@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ProjetoAndroid</string>
+    <string name="txtRa">Informe seu RA</string>
+    <string name="txtNomeCompleto">Informe seu nome</string>
+    <string name="txtTurma">Informe sua turma</string>
+    <string name="txtDisciplina">Disciplina</string>
+    <string name="txtNotaA1">Informe a nota da A1</string>
+    <string name="txtNotaA2">Informe a nota da A2</string>
+    <string name="btnInsert">Inserir</string>
+    <string name="btnCalcular">Calcular</string>
+    <string name="txtNotaAF">Informe a nota AF</string>
+
+    <string-array name="listaDeCursos">
+        <item>Análise e Desenvolvimento de Sistemas</item>
+        <item>Ciência da Computação</item>
+        <item>Redes de Computadores</item>
+    </string-array>
+
+
+</resources>

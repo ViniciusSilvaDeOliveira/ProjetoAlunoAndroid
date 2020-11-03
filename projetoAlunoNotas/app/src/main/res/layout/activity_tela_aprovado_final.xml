@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaAprovadoFinal">
+
+    <TextView
+        android:id="@+id/txtDisciplina3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disciplina:" />
+
+    <TextView
+        android:id="@+id/txtNomeDisciplina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDisciplina3"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/txtnotaFinal2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNomeDisciplina"
+        android:text="Nota:" />
+
+    <TextView
+        android:id="@+id/txtNota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtnotaFinal2"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txtAprovado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNota"
+        android:text="TextView" />
+
+
+    <EditText
+        android:id="@+id/edtAF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAprovado"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:hint="@string/txtNotaAF"/>
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_below="@id/edtAF"
+        android:text="@string/btnCalcular"/>
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCalcular"
+        android:text="Voltar"
+        android:onClick="btnTelaAprovado"/>
+
+    <TextView
+        android:id="@+id/txtNotaFinal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnVoltar"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/txtSituacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNotaFinal"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/corAprovado"
+        android:text="" />
+</RelativeLayout>

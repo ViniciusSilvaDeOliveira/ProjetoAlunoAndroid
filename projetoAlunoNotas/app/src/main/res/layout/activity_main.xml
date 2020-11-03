@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtRa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RA:" />
+
+    <EditText
+        android:id="@+id/edtRa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtRa"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/txtRa" />
+
+    <TextView
+        android:id="@+id/txtNomeCompleto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtRa"
+        android:text="Nome Completo:" />
+
+    <EditText
+        android:id="@+id/edtNomeCompleto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNomeCompleto"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/txtNomeCompleto" />
+
+    <TextView
+        android:id="@+id/txtCursos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtNomeCompleto"
+        android:text="Cursos:" />
+
+    <Spinner
+        android:id="@+id/cursos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCursos"/>
+
+    <TextView
+        android:id="@+id/txtTurma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cursos"
+        android:text="Turma:" />
+
+    <EditText
+        android:id="@+id/edtTurma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTurma"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/txtTurma" />
+
+    <Button
+        android:id="@+id/btnDesistir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTurma"
+        android:text="Desistir"
+        android:onClick="btnDesistir"/>
+
+    <Button
+        android:id="@+id/btnAvancar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDesistir"
+        android:text="Avançar"
+        android:onClick="btnTelaDisciplina" />
+
+
+</RelativeLayout>
